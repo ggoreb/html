@@ -1,0 +1,35 @@
+<body>
+  <button type="button" ondblclick="confirm('삭제할래?')">동작</button>
+  <button type="button" class="action">동작</button>
+  <script>
+    document.querySelector('.action').addEventListener("click", () => {
+      
+      window.open(
+        'http://www.naver.com', '', 'width=300 height=200');
+
+      // location = 'http://www.naver.com';
+    });
+  </script>
+
+  <textarea name="message" rows="5" cols="30">The cat was playing in the garden.</textarea>
+
+
+
+
+  <form action="" method="">
+    <input type="text" name="country_code" pattern="[가-힇0-9]{4}"
+title="Three letter country code">
+
+    <input type="text" name="code" 
+       pattern="010-[0-9]{3,4}-[0-9]{4}"
+       placeholder="ex) 010-1234-5678">
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+        
+    <button type="submit">제출</button>
+  </form>
+</body>
